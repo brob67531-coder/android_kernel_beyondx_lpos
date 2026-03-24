@@ -54,6 +54,6 @@ jobs:
           name: "LPoS Kernel ${{ env.LPOS_KERNEL_VERSION }}"
           draft: false
           prerelease: false
-          token: ${{ secrets.TOKEN }}          
-          artifacts: "out/LPoS*.zip,out/KSU*.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}          
+          artifacts: "out/LPoS*.zip,out/KSU*.zip,out/clean*.zip"
           body: "Commit SHA: ${{ github.sha }}"
